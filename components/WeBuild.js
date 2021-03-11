@@ -44,8 +44,8 @@ export default function WeBuild() {
 
 const Build = styled.div`
   padding: 45px;
-  width: 100%;
-
+  max-width: 1400px;
+  margin: 0 auto;
   .top {
     width: 100%;
     text-align: center;

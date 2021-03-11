@@ -1,7 +1,10 @@
 import Head from "next/head";
+import ContactSmallSection from "../components/ContactSmallSection";
 import Hero from "../components/Hero";
+import HowWeWork from "../components/HowWeWork";
 import OurServicesIn from "../components/OurServicesIn";
 import WeBuild from "../components/weBuild";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
       <Hero />
       <WeBuild />
       <OurServicesIn />
+      <HowWeWork />
+      <WhyChooseUs />
+      <ContactSmallSection />
     </div>
   );
 }

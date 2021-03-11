@@ -69,7 +69,7 @@ const Oservices = styled.div`
   background-color: #48484a;
 `;
 const MainS = styled.div`
-  width: 85%;
+  max-width: 1200px;
   margin: 0 auto;
   .top {
     width: 100%;
@@ -116,14 +116,13 @@ const MainS = styled.div`
   }
 
   .swave {
-    width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     right: 0;
     text-align: right;
 
     img {
-      width: 50%;
+      width: 80%;
     }
   }
 `;

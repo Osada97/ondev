@@ -92,7 +92,7 @@ const Box = styled.div`
     align-items: flex-end;
 
     img {
-      width: 700px;
+      width: 82%;
     }
   }
   .svg {

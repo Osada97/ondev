@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1226.449" height="597.5" viewBox="0 0 1226.449 597.5">
+  <g id="Group_277" data-name="Group 277" transform="translate(-385.816 -3219.585)">
+    <g id="Group_24" data-name="Group 24" transform="translate(662.816 3220.042)">
+      <ellipse id="Ellipse_46" data-name="Ellipse 46" cx="40" cy="40.5" rx="40" ry="40.5" transform="translate(0 -0.457)" fill="#48484a"/>
+      <text id="_01" data-name="01" transform="translate(25 50.543)" fill="#fff" font-size="29" font-family="Cabin-Medium, Cabin" font-weight="500"><tspan x="0" y="0">01</tspan></text>
+    </g>
+    <g id="Group_26" data-name="Group 26" transform="translate(385.816 3396.042)">
+      <ellipse id="Ellipse_46-2" data-name="Ellipse 46" cx="40" cy="40.5" rx="40" ry="40.5" transform="translate(0 -0.457)" fill="#48484a"/>
+      <text id="_02" data-name="02" transform="translate(22 50.543)" fill="#fff" font-size="29" font-family="Cabin-Medium, Cabin" font-weight="500"><tspan x="0" y="0">02</tspan></text>
+    </g>
+    <g id="Group_27" data-name="Group 27" transform="translate(771.316 3501.628)">
+      <ellipse id="Ellipse_46-3" data-name="Ellipse 46" cx="40" cy="40.5" rx="40" ry="40.5" transform="translate(0 -0.457)" fill="#48484a"/>
+      <text id="_03" data-name="03" transform="translate(22 50.543)" fill="#fff" font-size="29" font-family="Cabin-Medium, Cabin" font-weight="500"><tspan x="0" y="0">03</tspan></text>
+    </g>
+    <g id="Group_29" data-name="Group 29" transform="translate(1248.816 3251.042)">
+      <ellipse id="Ellipse_46-4" data-name="Ellipse 46" cx="40" cy="40.5" rx="40" ry="40.5" transform="translate(0 -0.457)" fill="#48484a"/>
+      <text id="_04" data-name="04" transform="translate(23 50.543)" fill="#fff" font-size="29" font-family="Cabin-Medium, Cabin" font-weight="500"><tspan x="0" y="0">04</tspan></text>
+    </g>
+    <g id="Group_31" data-name="Group 31" transform="translate(1379.341 3696.042)">
+      <ellipse id="Ellipse_46-5" data-name="Ellipse 46" cx="40" cy="40.5" rx="40" ry="40.5" transform="translate(0 -0.457)" fill="#48484a"/>
+      <text id="_05" data-name="05" transform="translate(23 50.543)" fill="#fff" font-size="29" font-family="Cabin-Medium, Cabin" font-weight="500"><tspan x="0" y="0">05</tspan></text>
+    </g>
+    <g id="Group_33" data-name="Group 33" transform="translate(523.316 3736.542)">
+      <ellipse id="Ellipse_46-6" data-name="Ellipse 46" cx="40" cy="40.5" rx="40" ry="40.5" transform="translate(0 -0.457)" fill="#48484a"/>
+      <text id="_06" data-name="06" transform="translate(21.5 50.543)" fill="#fff" font-size="29" font-family="Cabin-Medium, Cabin" font-weight="500"><tspan x="0" y="0">06</tspan></text>
+    </g>
+    <path id="Path_430" data-name="Path 430" d="M254,0C215.109,74.146,57.315,16.58,0,104" transform="translate(425.316 3291.085)" fill="none" stroke="#707070" stroke-width="2"/>
+    <path id="Path_431" data-name="Path 431" d="M-1.162-.856C56.463,70.929,225.628,16.281,312.7,83.266" transform="translate(466.316 3436.085)" fill="none" stroke="#707070" stroke-width="2"/>
+    <path id="Path_432" data-name="Path 432" d="M-4.567,161.729C49.867,44.919,436.626,101.208,473.119-11.356" transform="translate(811.816 3342.942)" fill="none" stroke="#707070" stroke-width="2"/>
+    <path id="Path_433" data-name="Path 433" d="M11.312.7C-2.677,155.261,589.074,184.514,156.576,394.552" transform="translate(1296.316 3326.085)" fill="none" stroke="#707070" stroke-width="2"/>
+    <path id="Path_434" data-name="Path 434" d="M780.974,3.787C587.874-130.593,168.926,50.086,0,56" transform="translate(603.316 3721.085)" fill="none" stroke="#707070" stroke-width="2"/>
+  </g>
+</svg>

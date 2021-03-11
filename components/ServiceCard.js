@@ -44,6 +44,7 @@ const Scard = styled.div`
 
   &:hover {
     background-color: #ffffff1c;
+    transform: scale(1.02);
   }
 
   &:hover ${Image} {
