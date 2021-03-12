@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
 
-export default function Nav() {
+export default function Nav({ navType }) {
   return (
     <NAV>
       <NavMain>
@@ -11,13 +11,13 @@ export default function Nav() {
         </Log>
         <List className="list-col">
           <Ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>SERVICES</li>
-            <li>CONTACT</li>
-            <li>OnDev SHOP</li>
+            <li className={!navType ? "listSt" : ""}>HOME</li>
+            <li className={!navType ? "listSt" : ""}>ABOUT</li>
+            <li className={!navType ? "listSt" : ""}>SERVICES</li>
+            <li className={!navType ? "listSt" : ""}>CONTACT</li>
+            <li className={!navType ? "listSt" : ""}>OnDev SHOP</li>
           </Ul>
-          <button>LET'S TALK</button>
+          <button className={!navType ? "myStyle" : ""}>LET'S TALK</button>
         </List>
       </NavMain>
     </NAV>
@@ -65,6 +65,21 @@ const List = styled.div`
     &:hover {
       box-shadow: 0px 0px 8px 1px #2039cc;
       background: #47518b47;
+    }
+  }
+  .myStyle {
+    color: #48484a;
+    font-weight: bold;
+    &:hover {
+      background-color: #2039cc;
+      color: #fff;
+    }
+  }
+  .listSt {
+    color: #48484a;
+    font-weight: bold;
+    &:hover {
+      color: #2039cc;
     }
   }
 `;

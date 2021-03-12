@@ -21,7 +21,7 @@ export default function ContactSmallSection() {
 
 const Wrapper = styled.div`
   width: 100%;
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
 `;

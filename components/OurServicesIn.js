@@ -1,8 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import ServiceCard from "./ServiceCard";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 
 export default function OurServicesIn() {
+  const [sliderRef] = useKeenSlider({
+    slidesPerView: 4,
+    mode: "free-snap",
+    spacing: 45,
+    centered: false,
+    loop: false,
+    duration: 1000,
+  });
+
   return (
     <Oservices>
       <MainS>
@@ -20,7 +31,7 @@ export default function OurServicesIn() {
           </div>
           <p>Read more</p>
         </div>
-        <div className="body">
+        <div className="body keen-slider" ref={sliderRef}>
           <ServiceCard
             title="Frontend Web Development"
             msg="Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -28,6 +39,7 @@ export default function OurServicesIn() {
                 excepturi, inventore expedita possimus? Mollitia quisquam illum
                 sed error maxime explicabo consequuntur ab, debitis eius."
             imgUrl="lap.svg"
+            num="1"
           />
           <ServiceCard
             title="Backend Web Development"
@@ -36,6 +48,7 @@ export default function OurServicesIn() {
                 excepturi, inventore expedita possimus? Mollitia quisquam illum
                 sed error maxime explicabo consequuntur ab, debitis eius."
             imgUrl="backend.svg"
+            num="2"
           />
           <ServiceCard
             title="API Development"
@@ -44,6 +57,7 @@ export default function OurServicesIn() {
                 excepturi, inventore expedita possimus? Mollitia quisquam illum
                 sed error maxime explicabo consequuntur ab, debitis eius."
             imgUrl="api.svg"
+            num="3"
           />
           <ServiceCard
             title="React Development"
@@ -52,6 +66,34 @@ export default function OurServicesIn() {
                 excepturi, inventore expedita possimus? Mollitia quisquam illum
                 sed error maxime explicabo consequuntur ab, debitis eius."
             imgUrl="react.svg"
+            num="4"
+          />
+          <ServiceCard
+            title="Django Development"
+            msg="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam, similique? Beatae accusamus quo deserunt ipsum
+                excepturi, inventore expedita possimus? Mollitia quisquam illum
+                sed error maxime explicabo consequuntur ab, debitis eius."
+            imgUrl="dar.svg"
+            num="5"
+          />
+          <ServiceCard
+            title="Database Development"
+            msg="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam, similique? Beatae accusamus quo deserunt ipsum
+                excepturi, inventore expedita possimus? Mollitia quisquam illum
+                sed error maxime explicabo consequuntur ab, debitis eius."
+            imgUrl="database.svg"
+            num="6"
+          />
+          <ServiceCard
+            title="WordPress Development"
+            msg="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam, similique? Beatae accusamus quo deserunt ipsum
+                excepturi, inventore expedita possimus? Mollitia quisquam illum
+                sed error maxime explicabo consequuntur ab, debitis eius."
+            imgUrl="wp.svg"
+            num="7"
           />
         </div>
         <div className="swave">
@@ -67,6 +109,7 @@ const Oservices = styled.div`
   padding: 100px 40px;
   width: 100%;
   background-color: #48484a;
+  overflow: hidden;
 `;
 const MainS = styled.div`
   max-width: 1200px;
@@ -113,6 +156,8 @@ const MainS = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
+    cursor: grab;
+    overflow: visible;
   }
 
   .swave {

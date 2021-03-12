@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function ServiceCard({ title, msg, imgUrl }) {
+export default function ServiceCard({ title, msg, imgUrl, num }) {
   return (
     <>
-      <Scard className="scard">
+      <Scard className={`scard keen-slider__slide number-slide${num}`}>
         <h2>{title}</h2>
         <div className="bdy">
           <p>{msg}</p>
@@ -23,8 +23,10 @@ const Image = styled.div`
   position: absolute;
   bottom: 12px;
   right: -20px;
-  opacity: 0;
+  opacity: 1;
   user-select: none;
+  z-index: -1;
+  opacity: 0;
   transition: 0.8s ease-in-out;
 
   img {
@@ -35,12 +37,13 @@ const Image = styled.div`
 const Scard = styled.div`
   position: relative;
   border: 1px solid #fff;
-  flex-basis: 272px;
-  height: 315px;
+  flex-basis: 262px;
+  height: 300px;
   padding: 22px;
   box-shadow: 0px 0px 3px #fff;
   border-radius: 5px;
-  transition: 0.8s ease;
+  overflow: visible;
+  transition: background-color 0.8s ease;
 
   &:hover {
     background-color: #ffffff1c;
@@ -49,6 +52,7 @@ const Scard = styled.div`
 
   &:hover ${Image} {
     opacity: 1;
+    z-index: 1;
   }
 
   .bdy {
