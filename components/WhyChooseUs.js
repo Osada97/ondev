@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Tilt from "react-tilt";
+import WhyChooseCard from "./WhyChooseCard";
 
 export default function WhyChooseUs() {
   return (
@@ -19,48 +21,31 @@ export default function WhyChooseUs() {
           <div className="column"></div>
           <div className="column">
             <div className="card-sec">
-              <div className="card">
-                <div className="icon">
-                  <img src="/img/svg/vollet.svg" alt="" />
-                </div>
-                <h3>Highly Cost-Effective</h3>
-              </div>
-              <div className="card">
-                <div className="icon">
-                  <img src="/img/svg/vollet.svg" alt="" />
-                </div>
-                <h3>Highly Cost-Effective</h3>
-              </div>
-              <div className="card">
-                <div className="icon">
-                  <img src="/img/svg/vollet.svg" alt="" />
-                </div>
-                <h3>Highly Cost-Effective</h3>
-              </div>
-              <div className="card">
-                <div className="icon">
-                  <img src="/img/svg/vollet.svg" alt="" />
-                </div>
-                <h3>Highly Cost-Effective</h3>
-              </div>
-              <div className="card">
-                <div className="icon">
-                  <img src="/img/svg/vollet.svg" alt="" />
-                </div>
-                <h3>Highly Cost-Effective</h3>
-              </div>
-              <div className="card">
-                <div className="icon">
-                  <img src="/img/svg/vollet.svg" alt="" />
-                </div>
-                <h3>Highly Cost-Effective</h3>
-              </div>
-              <div className="card">
-                <div className="icon">
-                  <img src="/img/svg/vollet.svg" alt="" />
-                </div>
-                <h3>Highly Cost-Effective</h3>
-              </div>
+              <WhyChooseCard
+                imgname="vollet.svg"
+                content="Highly Cost-Effective"
+              />
+              <WhyChooseCard
+                imgname="brain-light.svg"
+                content="Out Of The Box Custom Solutions"
+              />
+              <WhyChooseCard
+                imgname="flexible.svg"
+                content="Flexible And Transparent Operation"
+              />
+              <WhyChooseCard imgname="on-time.svg" content="On Time Delivery" />
+              <WhyChooseCard
+                imgname="100precent.svg"
+                content="100% Customer Satisfaction"
+              />
+              <WhyChooseCard
+                imgname="user-experience.svg"
+                content="Experience With Credibility"
+              />
+              <WhyChooseCard
+                imgname="repair.svg"
+                content="Support And Maintenance"
+              />
             </div>
           </div>
         </Body>
@@ -78,9 +63,18 @@ const WhyC = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    animation: waving 5s linear infinite alternate;
 
     img {
       max-width: 80%;
+    }
+  }
+  @keyframes waving {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: -100px;
     }
   }
   .wave-mid {
@@ -145,7 +139,9 @@ const Body = styled.div`
           border: 2px solid #fefefe;
           border-radius: 8px;
           overflow: hidden;
+          padding: 5px;
           background-color: #ffffff05;
+          transform: translateZ(20px);
 
           &::after {
             content: "";
@@ -182,6 +178,10 @@ const Body = styled.div`
             grid-area: card7;
           }
 
+          &:hover .icon {
+            box-shadow: 0px 0px 5px 3px #e6e6e69e;
+          }
+
           .icon {
             width: 60px;
             height: 60px;
@@ -203,6 +203,7 @@ const Body = styled.div`
           color: #e6e6e6;
           font-family: var(--sub-font);
           font-size: 15px;
+          text-align: center;
         }
       }
     }

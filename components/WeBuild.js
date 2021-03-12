@@ -98,6 +98,12 @@ const Build = styled.div`
         outline: none;
         cursor: pointer;
         font-weight: bold;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+          background: #2039cc;
+          color: #fff;
+        }
       }
     }
 

@@ -82,6 +82,13 @@ const Box = styled.div`
       background-color: #47518b;
       color: #fff;
       letter-spacing: 1.2px;
+      outline: none;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: 0px 0px 12px 3px #34408a;
+      }
     }
   }
   .dev-imge {

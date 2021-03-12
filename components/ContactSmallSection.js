@@ -54,6 +54,12 @@ const Main = styled.div`
         color: #ffffff;
         font-size: 17px;
         letter-spacing: 1px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out 0.1s;
+
+        &:hover {
+          background-color: #ffffff5c;
+        }
       }
     }
     .img-rc {
