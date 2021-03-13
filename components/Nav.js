@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
+import Link from "next/link";
 
 export default function Nav({ navType }) {
   return (
@@ -11,13 +12,25 @@ export default function Nav({ navType }) {
         </Log>
         <List className="list-col">
           <Ul>
-            <li className={!navType ? "listSt" : ""}>HOME</li>
-            <li className={!navType ? "listSt" : ""}>ABOUT</li>
-            <li className={!navType ? "listSt" : ""}>SERVICES</li>
-            <li className={!navType ? "listSt" : ""}>CONTACT</li>
-            <li className={!navType ? "listSt" : ""}>OnDev SHOP</li>
+            <Link href="/">
+              <li className={!navType ? "listSt" : ""}>HOME</li>
+            </Link>
+            <Link href="/about">
+              <li className={!navType ? "listSt" : ""}>ABOUT</li>
+            </Link>
+            <Link href="/services/">
+              <li className={!navType ? "listSt" : ""}>SERVICES</li>
+            </Link>
+            <Link href="/contact">
+              <li className={!navType ? "listSt" : ""}>CONTACT</li>
+            </Link>
+            <Link href="#">
+              <li className={!navType ? "listSt" : ""}>OnDev SHOP</li>
+            </Link>
           </Ul>
-          <button className={!navType ? "myStyle" : ""}>LET'S TALK</button>
+          <Link href="/contact">
+            <button className={!navType ? "myStyle" : ""}>LET'S TALK</button>
+          </Link>
         </List>
       </NavMain>
     </NAV>

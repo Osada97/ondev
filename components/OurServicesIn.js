@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ServiceCard from "./ServiceCard";
 import { useKeenSlider } from "keen-slider/react";
+import Link from "next/link";
 import "keen-slider/keen-slider.min.css";
 
 export default function OurServicesIn() {
@@ -21,15 +22,17 @@ export default function OurServicesIn() {
           <div className="column">
             <h1>Our Services</h1>
             <div className="nav-area">
-              <button>
+              {/* <button>
                 <img src="/img/svg/left.svg" alt="" />
               </button>
               <button>
                 <img src="/img/svg/right.svg" alt="" />
-              </button>
+              </button> */}
             </div>
           </div>
-          <p>Read more</p>
+          <p>
+            <Link href="/services">Read more</Link>
+          </p>
         </div>
         <div className="body keen-slider" ref={sliderRef}>
           <ServiceCard
@@ -150,6 +153,14 @@ const MainS = styled.div`
       cursor: pointer;
       font-family: var(--main-font);
       font-weight: lighter;
+    }
+    a {
+      color: #ffff;
+      font-size: 16px;
+      cursor: pointer;
+      font-family: var(--main-font);
+      font-weight: lighter;
+      text-decoration: none;
     }
   }
   .body {

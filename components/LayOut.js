@@ -16,7 +16,7 @@ export default function LayOut({ children }) {
     } else {
       setnavType(false);
     }
-  }, []);
+  }, [pathname]);
 
   return (
     <div>

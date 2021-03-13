@@ -1,7 +1,8 @@
 import React from "react";
+import { Link as Ln } from "react-scroll";
 import styled from "styled-components";
-import ContactSmallSection from "../components/ContactSmallSection";
-import ServicesSection from "../components/ServicesSection";
+import ContactSmallSection from "../../components/ContactSmallSection";
+import ServicesSection from "../../components/ServicesSection";
 
 export default function services() {
   return (
@@ -28,34 +29,42 @@ export default function services() {
       </Mainherose>
       <Rowmid>
         <div className="main">
-          <div className="col">
-            <img src="/img/svg/database-solid.svg" alt="" />
-            <h3>
-              <span>Backend</span> Web
-            </h3>
-            <p>Development</p>
-          </div>
-          <div className="col">
-            <img src="/img/svg/website.svg" alt="" />
-            <h3>
-              <span>Frontend</span> Web
-            </h3>
-            <p>Development</p>
-          </div>
-          <div className="col">
-            <img src="/img/svg/wordpress-simple-brands.svg" alt="" />
-            <h3>
-              <span>WordPress</span> Web
-            </h3>
-            <p>Development</p>
-          </div>
-          <div className="col">
-            <img src="/img/svg/mobile-alt-solid.svg" alt="" />
-            <h3>
-              <span>App</span> App
-            </h3>
-            <p>Development</p>
-          </div>
+          <Ln to="bd" smooth="true" duration={1500}>
+            <div className="col">
+              <img src="/img/svg/database-solid.svg" alt="" />
+              <h3>
+                <span>Backend</span> Web
+              </h3>
+              <p>Development</p>
+            </div>
+          </Ln>
+          <Ln to="fd" smooth="true" duration={1500}>
+            <div className="col">
+              <img src="/img/svg/website.svg" alt="" />
+              <h3>
+                <span>Frontend</span> Web
+              </h3>
+              <p>Development</p>
+            </div>
+          </Ln>
+          <Ln to="wp" smooth="true" duration={1500}>
+            <div className="col">
+              <img src="/img/svg/wordpress-simple-brands.svg" alt="" />
+              <h3>
+                <span>WordPress</span> Web
+              </h3>
+              <p>Development</p>
+            </div>
+          </Ln>
+          <Ln to="dv" smooth="true" duration={1500}>
+            <div className="col">
+              <img src="/img/svg/mobile-alt-solid.svg" alt="" />
+              <h3>
+                <span>App</span> App
+              </h3>
+              <p>Development</p>
+            </div>
+          </Ln>
         </div>
       </Rowmid>
       <ServicesSection />
@@ -110,7 +119,7 @@ const Mainherose = styled.div`
         font-size: 17px;
       }
       img {
-        width: 55%;
+        width: 65%;
       }
     }
   }

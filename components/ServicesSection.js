@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 export default function ServicesSection() {
   return (
@@ -9,7 +10,7 @@ export default function ServicesSection() {
           <div className="column">
             <img src="/img/svg/backend-dev.svg" alt="" />
           </div>
-          <div className="column">
+          <div className="column" id="bd">
             <h1>Backend Development</h1>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -18,7 +19,7 @@ export default function ServicesSection() {
               dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
               sanctus est Lorem ipsum d
             </p>
-            <a href="#">Read More &#8594;</a>
+            <Link href="/services/backend">Read More &#8594;</Link>
 
             <div className="card-row">
               <h3>Django Development</h3>
@@ -29,7 +30,7 @@ export default function ServicesSection() {
           </div>
         </div>
       </Sectionfon>
-      <Sectionback>
+      <Sectionback id="fd">
         <div className="main">
           <div className="column">
             <h1>Frontend Development</h1>
@@ -40,7 +41,7 @@ export default function ServicesSection() {
               dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
               sanctus est Lorem ipsum d
             </p>
-            <a href="#">Read More &#8594;</a>
+            <Link href="/services/frontend">Read More &#8594;</Link>
             <div className="card-row">
               <h3>React Development</h3>
             </div>
@@ -50,7 +51,7 @@ export default function ServicesSection() {
           </div>
         </div>
       </Sectionback>
-      <Sectionfon>
+      <Sectionfon id="wp">
         <div className="main">
           <div className="column">
             <img src="/img/svg/wpre.svg" alt="" />
@@ -64,11 +65,11 @@ export default function ServicesSection() {
               dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
               sanctus est Lorem ipsum d
             </p>
-            <a href="#">Read More &#8594;</a>
+            <Link href="/services/wp">Read More &#8594;</Link>
           </div>
         </div>
       </Sectionfon>
-      <Sectionback>
+      <Sectionback id="dv">
         <div className="main">
           <div className="column">
             <h1>Mobile App Development</h1>
@@ -79,7 +80,7 @@ export default function ServicesSection() {
               dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
               sanctus est Lorem ipsum d
             </p>
-            <a href="#">Read More &#8594;</a>
+            <Link href="/services/mobileapp">Read More &#8594;</Link>
             <div className="card-row">
               <h3>IOS Development</h3>
               <h3>Android Development</h3>
@@ -131,7 +132,7 @@ const Sectionfon = styled.div`
       flex-direction: column;
       &:nth-child(1) {
         img {
-          width: 70%;
+          width: 65%;
           animation: shake 2s linear infinite alternate;
         }
       }
@@ -233,7 +234,7 @@ const Sectionback = styled.div`
       flex-direction: column;
       &:nth-child(2) {
         img {
-          width: 70%;
+          width: 65%;
           animation: shake 2s linear infinite alternate;
         }
       }

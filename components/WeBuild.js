@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Link from "next/link";
 
 export default function WeBuild() {
   return (
@@ -18,7 +19,9 @@ export default function WeBuild() {
               dolore nulla dolorem. Veniam commodi a dolorum voluptas labore
               corrupti tenetur iusto neque.
             </p>
-            <button>Explore More</button>
+            <Link href="/mainservicesweb">
+              <button>Explore More</button>
+            </Link>
           </div>
         </div>
         <div className="column-mid">
