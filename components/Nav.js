@@ -35,9 +35,9 @@ export default function Nav({ navType }) {
         </List>
         <Mobilenav>
           <button onClick={() => setisMobNav(!isMobNav)}>
-            <div className="menubar1"></div>
-            <div className="menubar2"></div>
-            <div className="menubar3"></div>
+            <div className={!navType ? "myBar menubar1" : "menubar1"}></div>
+            <div className={!navType ? "myBar menubar2" : "menubar2"}></div>
+            <div className={!navType ? "myBar menubar3" : "menubar3"}></div>
           </button>
           {isMobNav && (
             <div className="menu">
@@ -194,7 +194,9 @@ const Mobilenav = styled.div`
     &:hover .menubar2 {
       transform: translateX(0);
     }
-
+    .myBar {
+      background-color: #000 !important;
+    }
     .menubar1,
     .menubar2,
     .menubar3 {

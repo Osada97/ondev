@@ -87,7 +87,13 @@ const Main = styled.div`
         display: none;
       }
       .dis {
+        h1 {
+          margin: 0;
+        }
         flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
