@@ -9,7 +9,7 @@ export default function OurServicesIn() {
   const [sliderRef] = useKeenSlider({
     slidesPerView: 4,
     mode: "free-snap",
-    spacing: 45,
+    spacing: 40,
     centered: false,
     loop: false,
     duration: 1000,

@@ -38,7 +38,7 @@ const Scard = styled.div`
   position: relative;
   border: 1px solid #fff;
   flex-basis: 262px;
-  height: 300px;
+  height: 320px;
   padding: 22px;
   box-shadow: 0px 0px 3px #fff;
   border-radius: 5px;
