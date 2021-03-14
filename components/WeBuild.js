@@ -118,4 +118,43 @@ const Build = styled.div`
       }
     }
   }
+  @media (max-width: 1200px) {
+    padding: 20px;
+  }
+  @media (max-width: 712px) {
+    .body {
+      flex-wrap: wrap;
+      padding-top: 45px;
+      .column {
+        margin-bottom: 25px;
+      }
+      .column-mid {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 334px) {
+    .body {
+      .column {
+        img {
+          width: 175px !important;
+        }
+        .dl {
+          button {
+            width: 120px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 200px) {
+    padding: 10px 0;
+    .body {
+      .column {
+        img {
+          width: 130px !important;
+        }
+      }
+    }
+  }
 `;

@@ -88,6 +88,12 @@ const Main = styled.div`
     img {
       width: 160px;
     }
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+  @media (max-width: 1000px) {
+    max-width: 95%;
   }
 `;
 const Bdy = styled.div`
@@ -100,10 +106,19 @@ const Bdy = styled.div`
       width: 80%;
     }
   }
+  @media (max-width: 900px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    counter-reset: section;
+    .bdy-main {
+      display: none;
+    }
+  }
 `;
 const SimCard = styled.div`
   font-family: var(--sub-font);
-  width: 300px;
+  width: 255px;
   padding: 8px;
   overflow: hidden;
   position: absolute;
@@ -115,5 +130,38 @@ const SimCard = styled.div`
   p {
     font-size: 15px;
     color: #48484a;
+  }
+  @media (max-width: 900px) {
+    position: relative;
+    margin-bottom: 15px;
+    top: 0 !important;
+    left: 0 !important;
+    transition: 0.8s ease;
+
+    &:before {
+      counter-increment: section;
+      content: counter(section);
+      display: block;
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+      margin-bottom: 8px;
+      background-color: transparent;
+      color: #48484a;
+      border-radius: 50px;
+      font-size: 40px;
+      z-index: -1;
+      opacity: 0.6;
+      font-weight: 900;
+      transition: 0.8s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &:hover:before {
+      background: #48484a;
+      color: #fff;
+      transition: 0.8s ease;
+    }
   }
 `;

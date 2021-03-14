@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import Link from "next/link";
 
 export default function Nav({ navType }) {
+  const [isMobNav, setisMobNav] = useState(false);
   return (
     <NAV>
       <NavMain>
         <Log className="log">
-          <StyledImage src="/img/L1.png" alt="logo" width={140} height={50} />
+          <StyledImage src="/img/L1.png" alt="logo" />
         </Log>
         <List className="list-col">
           <Ul>
@@ -32,6 +33,34 @@ export default function Nav({ navType }) {
             <button className={!navType ? "myStyle" : ""}>LET'S TALK</button>
           </Link>
         </List>
+        <Mobilenav>
+          <button onClick={() => setisMobNav(!isMobNav)}>
+            <div className="menubar1"></div>
+            <div className="menubar2"></div>
+            <div className="menubar3"></div>
+          </button>
+          {isMobNav && (
+            <div className="menu">
+              <ul>
+                <Link href="/">
+                  <li className={!navType ? "listSt" : ""}>HOME</li>
+                </Link>
+                <Link href="/about">
+                  <li className={!navType ? "listSt" : ""}>ABOUT</li>
+                </Link>
+                <Link href="/services/">
+                  <li className={!navType ? "listSt" : ""}>SERVICES</li>
+                </Link>
+                <Link href="/contact">
+                  <li className={!navType ? "listSt" : ""}>CONTACT</li>
+                </Link>
+                <Link href="#">
+                  <li className={!navType ? "listSt" : ""}>OnDev SHOP</li>
+                </Link>
+              </ul>
+            </div>
+          )}
+        </Mobilenav>
       </NavMain>
     </NAV>
   );
@@ -49,9 +78,19 @@ const NAV = styled.nav`
   z-index: 1;
 `;
 const NavMain = styled.div`
+  position: relative;
   width: 90%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1040px) {
+    width: 95%;
+  }
+  @media (max-width: 250px) {
+    display: block;
+    text-align: center;
+  }
 `;
 const Log = styled.div`
   flex: 0.2;
@@ -79,6 +118,9 @@ const List = styled.div`
       box-shadow: 0px 0px 8px 1px #2039cc;
       background: #47518b47;
     }
+    @media (max-width: 450px) {
+      display: none;
+    }
   }
   .myStyle {
     color: #48484a;
@@ -100,7 +142,6 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
-
   li {
     padding: 0 28px;
     font-size: 14px;
@@ -112,7 +153,103 @@ const Ul = styled.ul`
       color: #1bb3ff;
     }
   }
+
+  @media (max-width: 980px) {
+    display: none;
+  }
 `;
-const StyledImage = styled(Image)`
-  width: 260px;
+const StyledImage = styled.img`
+  width: 150px !important;
+  @media (max-width: 160px) {
+    width: 110px !important;
+  }
+`;
+const Mobilenav = styled.div`
+  position: relative;
+  display: none;
+  margin-left: 25px;
+  @media (max-width: 980px) {
+    display: block;
+  }
+  @media (max-width: 250px) {
+    display: flex;
+    margin-left: 0;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: Column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &:hover .menubar2 {
+      transform: translateX(0);
+    }
+
+    .menubar1,
+    .menubar2,
+    .menubar3 {
+      background-color: #fff;
+      width: 100%;
+      height: 2.5px;
+    }
+    .menubar2 {
+      transition: transform 0.3s ease;
+      margin: 7px 0;
+      transform: translateX(10px);
+    }
+  }
+  .menu {
+    position: absolute;
+    display: block;
+    background-color: #fffffff2;
+    top: 180%;
+    right: 0;
+    width: 230px;
+    min-height: 45vh;
+    z-index: 2;
+    padding: 15px;
+    overflow-y: auto;
+    border: 1px solid #34408a;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px 1px #eee;
+
+    ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      list-style: none;
+      li {
+        width: 100%;
+        font-family: var(--main-font);
+        color: #000;
+        padding: 18px 0;
+        text-align: left;
+        cursor: pointer;
+        font-size: 14px;
+        transition: transform 0.8s ease-in, color 0.5s ease;
+        &:hover {
+          color: #3499cc;
+          transform: translateX(5px);
+        }
+      }
+    }
+    @media (max-width: 450px) {
+      width: 200px;
+    }
+    @media (max-width: 220px) {
+      width: 120px;
+    }
+  }
 `;

@@ -88,11 +88,33 @@ const WhyC = styled.div`
       height: 100%;
     }
   }
+  @media (max-width: 1200px) {
+    .wave-mid {
+      left: 31%;
+    }
+  }
+  @media (max-width: 1000px) {
+    .wave-mid {
+      left: 27%;
+    }
+  }
+  @media (max-width: 950px) {
+    .wave-mid {
+      display: none;
+    }
+  }
+  @media (max-width: 890px) {
+    padding: 35px 0;
+  }
 `;
 
 const Main = styled.div`
   max-width: 1200px;
   margin: 0 auto 25px;
+
+  @media (max-width: 1200px) {
+    max-width: 95%;
+  }
 `;
 const Body = styled.div`
   display: flex;
@@ -216,6 +238,55 @@ const Body = styled.div`
 
     img {
       width: 200px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .column h1 {
+      font-size: 25px;
+    }
+    .column img {
+      width: 170px;
+    }
+  }
+  @media (max-width: 890px) {
+    flex-direction: column;
+    .column {
+      min-height: auto;
+      padding: 20px 0 0;
+
+      h1 {
+        margin: 0;
+        font-size: 35px;
+      }
+      &:nth-child(1) {
+        img {
+          display: none;
+        }
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 890px) {
+    .column:nth-child(3) .card-sec {
+      width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 0.5fr));
+      grid-template-rows: initial;
+      grid-template-areas:
+        "card2"
+        "card3"
+        "card1"
+        "card4"
+        "card5"
+        "card7"
+        "card6";
+      justify-content: center;
+    }
+  }
+  @media (max-width: 210px) {
+    .column:nth-child(3) .card-sec {
+      grid-template-columns: repeat(auto-fit, minmax(130px, 0.5fr));
     }
   }
 `;

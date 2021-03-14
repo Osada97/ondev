@@ -30,7 +30,7 @@ const Main = styled.div`
   background: transparent linear-gradient(236deg, #0c154a, #0c154a, #111e6c);
   .sma {
     position: relative;
-    width: 1200px;
+    max-width: 1200px;
     padding: 100px 0;
     margin: 0 auto;
     display: flex;
@@ -70,6 +70,38 @@ const Main = styled.div`
 
       img {
         width: 75%;
+      }
+    }
+  }
+
+  @media (max-width: 936px) {
+    .sma .img-rc img {
+      width: 60%;
+    }
+  }
+  @media (max-width: 936px) {
+    .sma {
+      justify-content: center;
+      align-items: center;
+      .img-rc {
+        display: none;
+      }
+      .dis {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  @media (max-width: 223px) {
+    .sma {
+      padding: 50px 0;
+      .dis {
+        h1 {
+          font-size: 20px;
+        }
+        button {
+          margin-top: 5px;
+          width: 120px;
+        }
       }
     }
   }

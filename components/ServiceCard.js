@@ -32,6 +32,11 @@ const Image = styled.div`
   img {
     width: 125px;
   }
+  @media (max-width: 319px) {
+    img {
+      display: none;
+    }
+  }
 `;
 
 const Scard = styled.div`
@@ -70,6 +75,7 @@ const Scard = styled.div`
     font-family: var(--sub-font);
     letter-spacing: 0.3px;
     font-size: 13px;
+    cursor: pointer;
   }
   .tail {
     p {
@@ -86,6 +92,26 @@ const Scard = styled.div`
         left: 0;
         width: 35%;
         border-bottom: 2px solid #9a9a9a;
+      }
+    }
+  }
+  @media (max-width: 319px) {
+    h2 {
+      font-size: 15px;
+    }
+    .bdy {
+      overflow-y: auto;
+      height: 65%;
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #afafaf;
+        border-radius: 20px;
+        border: transparent;
       }
     }
   }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import ServiceCard from "./ServiceCard";
 import { useKeenSlider } from "keen-slider/react";
@@ -6,14 +6,29 @@ import Link from "next/link";
 import "keen-slider/keen-slider.min.css";
 
 export default function OurServicesIn() {
+  const [count, setcount] = useState(4);
+
   const [sliderRef] = useKeenSlider({
-    slidesPerView: 4,
+    slidesPerView: count,
     mode: "free-snap",
     spacing: 40,
     centered: false,
     loop: false,
     duration: 1000,
   });
+
+  useEffect(() => {
+    let innerWidth = window.innerWidth;
+    console.log(innerWidth);
+    if (innerWidth < 560) {
+      setcount(1);
+    } else if (innerWidth < 815) {
+      setcount(2);
+    } else if (innerWidth < 1111) {
+      console.log(3);
+      setcount(3);
+    }
+  }, []);
 
   return (
     <Oservices>
@@ -113,6 +128,10 @@ const Oservices = styled.div`
   width: 100%;
   background-color: #48484a;
   overflow: hidden;
+
+  @media (max-width: 319px) {
+    padding: 80px 10px;
+  }
 `;
 const MainS = styled.div`
   max-width: 1200px;
@@ -179,6 +198,17 @@ const MainS = styled.div`
 
     img {
       width: 80%;
+    }
+  }
+  @media (max-width: 1200px) {
+    max-width: 95%;
+  }
+  @media (max-width: 319px) {
+    .top .column h1 {
+      font-size: 20px;
+    }
+    .top p a {
+      font-size: 14px;
     }
   }
 `;

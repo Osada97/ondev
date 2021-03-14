@@ -120,7 +120,7 @@ const Fooot = styled.div`
   }
 `;
 const Main = styled.div`
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0;
   display: flex;
@@ -188,6 +188,19 @@ const Main = styled.div`
           &:hover {
             color: #2039cc;
           }
+        }
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    .column {
+      margin-bottom: 15px;
+
+      .dis {
+        h3 {
+          word-break: break-all;
         }
       }
     }

@@ -55,7 +55,7 @@ const Box = styled.div`
   .text-section {
     flex: 0.4;
     font-family: "ubuntu", sans-serif;
-    z-index: 1;
+    z-index: 0;
 
     h3 {
       color: #fff;
@@ -111,6 +111,63 @@ const Box = styled.div`
 
     img {
       width: 100%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .text-section {
+      flex: 1;
+    }
+    .dev-imge {
+      display: none;
+    }
+    .text-section {
+      flex: 1;
+      text-align: center;
+      h1 {
+        font-size: 48px;
+      }
+    }
+  }
+  @media (max-width: 770px) {
+    .ovl {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    padding: 0 20px;
+    .text-section {
+      width: 90%;
+      flex: initial;
+      text-align: center;
+      h1 {
+        font-size: 38px;
+      }
+      h3 {
+        font-size: 21px;
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    button {
+      width: 120px !important;
+      font-size: 15px !important;
+    }
+  }
+  @media (max-width: 220px) {
+    .text-section {
+      h1 {
+        font-size: 25px;
+      }
+      h3 {
+        font-size: 15px;
+      }
+      button {
+        width: 100px !important;
+        font-size: 13px !important;
+      }
     }
   }
 `;
