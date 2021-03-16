@@ -1,26 +1,43 @@
+import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import ContactSmallSection from "../../components/ContactSmallSection";
+import {
+  mainIcon,
+  pageAnimation,
+  paragraphAni,
+  stagger,
+  titleAnim,
+} from "../animation";
 
 export default function frontend() {
   return (
-    <div>
+    <motion.div
+      variants={pageAnimation}
+      exit="exit"
+      animate="show"
+      initial="hidden"
+    >
       <BoxesSer className="box">
         <Main>
           <Row1>
-            <div className="column">
-              <h1>Backend Development</h1>
-              <p>
+            <motion.div variants={stagger} className="column">
+              <motion.h1 variants={titleAnim}>Backend Development</motion.h1>
+              <motion.p variants={paragraphAni}>
                 As the user-facing part of a product, nailing the frontend is
                 essential. We are building beautiful, responsive frontend
                 interfaces. Our frontend development expertise enables our
                 clients to differentiate themselves with digital products that
                 are a delight to use
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
             <div className="column">
               <div className="heimage">
-                <img src="/img/svg/backend-dev.svg" alt="" />
+                <motion.img
+                  variants={mainIcon}
+                  src="/img/svg/backend-dev.svg"
+                  alt=""
+                />
               </div>
             </div>
           </Row1>
@@ -43,7 +60,7 @@ export default function frontend() {
         </div>
       </Row2>
       <ContactSmallSection />
-    </div>
+    </motion.div>
   );
 }
 const BoxesSer = styled.div`

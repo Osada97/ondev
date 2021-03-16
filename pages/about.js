@@ -1,27 +1,40 @@
+import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import ContactSmallSection from "../components/ContactSmallSection";
+import {
+  mainIcon,
+  pageAnimation,
+  paragraphAni,
+  stagger,
+  titleAnim,
+} from "./animation";
 
 export default function about() {
   return (
-    <div>
+    <motion.div
+      variants={pageAnimation}
+      exit="exit"
+      initial="hidden"
+      animate="show"
+    >
       <Mainhero>
         <div className="main">
-          <div className="column">
-            <h1>About Us</h1>
-            <h2>
+          <motion.div variants={stagger} className="column">
+            <motion.h1 variants={titleAnim}>About Us</motion.h1>
+            <motion.h2 variants={titleAnim}>
               <span>OnDev</span> We're Global Team
-            </h2>
-            <p>
+            </motion.h2>
+            <motion.p variants={paragraphAni}>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
               dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
               sanctus est Lorem ipsum d
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
           <div className="column">
-            <img src="/img/about.png" alt="" />
+            <motion.img variants={mainIcon} src="/img/about.png" alt="" />
           </div>
         </div>
       </Mainhero>
@@ -472,7 +485,7 @@ export default function about() {
         </div>
       </Section>
       <ContactSmallSection />
-    </div>
+    </motion.div>
   );
 }
 

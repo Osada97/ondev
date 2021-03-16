@@ -2,9 +2,41 @@ import React, { useState } from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Nav({ navType }) {
   const [isMobNav, setisMobNav] = useState(false);
+
+  //animation
+  const fade = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transision: { duration: 0.2 } },
+    exit: {
+      opacity: 0,
+      transision: { duration: 0.3 },
+    },
+  };
+  const listItems = {
+    hidden: { y: 100, opacity: 0 },
+    show: {
+      y: 0,
+      opacity: 1,
+      transision: { ease: "easeOut" },
+    },
+    exit: {
+      y: 100,
+      opacity: 0,
+      transision: { ease: "easeOut" },
+    },
+  };
+  const stagger = {
+    show: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
   return (
     <NAV>
       <NavMain>
@@ -39,27 +71,60 @@ export default function Nav({ navType }) {
             <div className={!navType ? "myBar menubar2" : "menubar2"}></div>
             <div className={!navType ? "myBar menubar3" : "menubar3"}></div>
           </button>
-          {isMobNav && (
-            <div className="menu">
-              <ul>
-                <Link href="/">
-                  <li className={!navType ? "listSt" : ""}>HOME</li>
-                </Link>
-                <Link href="/about">
-                  <li className={!navType ? "listSt" : ""}>ABOUT</li>
-                </Link>
-                <Link href="/services/">
-                  <li className={!navType ? "listSt" : ""}>SERVICES</li>
-                </Link>
-                <Link href="/contact">
-                  <li className={!navType ? "listSt" : ""}>CONTACT</li>
-                </Link>
-                <Link href="#">
-                  <li className={!navType ? "listSt" : ""}>OnDev SHOP</li>
-                </Link>
-              </ul>
-            </div>
-          )}
+          <AnimatePresence exitBeforeEnter>
+            {isMobNav && (
+              <motion.div
+                variants={fade}
+                animate="show"
+                initial="hidden"
+                exit="exit"
+                className="menu"
+              >
+                <motion.ul variants={stagger}>
+                  <Link href="/">
+                    <motion.li
+                      variants={listItems}
+                      className={!navType ? "listSt" : ""}
+                    >
+                      HOME
+                    </motion.li>
+                  </Link>
+                  <Link href="/about">
+                    <motion.li
+                      variants={listItems}
+                      className={!navType ? "listSt" : ""}
+                    >
+                      ABOUT
+                    </motion.li>
+                  </Link>
+                  <Link href="/services/">
+                    <motion.li
+                      variants={listItems}
+                      className={!navType ? "listSt" : ""}
+                    >
+                      SERVICES
+                    </motion.li>
+                  </Link>
+                  <Link href="/contact">
+                    <motion.li
+                      variants={listItems}
+                      className={!navType ? "listSt" : ""}
+                    >
+                      CONTACT
+                    </motion.li>
+                  </Link>
+                  <Link href="#">
+                    <motion.li
+                      variants={listItems}
+                      className={!navType ? "listSt" : ""}
+                    >
+                      OnDev SHOP
+                    </motion.li>
+                  </Link>
+                </motion.ul>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </Mobilenav>
       </NavMain>
     </NAV>
@@ -147,7 +212,7 @@ const Ul = styled.ul`
     font-size: 14px;
     color: #fff;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: color 0.3s ease;
 
     &:hover {
       color: #1bb3ff;
@@ -223,6 +288,7 @@ const Mobilenav = styled.div`
     overflow-y: auto;
     border: 1px solid #34408a;
     border-radius: 3px;
+    overflow-y: hidden;
     box-shadow: 0px 0px 8px 1px #eee;
 
     ul {

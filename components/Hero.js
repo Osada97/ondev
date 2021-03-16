@@ -1,21 +1,31 @@
+import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
+import {
+  buttonAnim,
+  mainIcon,
+  shadowIcon,
+  stagger,
+  titleAnim,
+} from "../pages/animation";
 
 export default function Hero() {
   return (
     <Box className="box">
-      <div className="ovl">
+      <motion.div variants={shadowIcon} className="ovl">
         <img src="/img/MAIN LOGO 1.1.png" alt="" />
-      </div>
-      <div className="text-section">
-        <h3>
+      </motion.div>
+      <motion.div variants={stagger} className="text-section">
+        <motion.h3 variants={titleAnim}>
           Welcome To <span>OnDev</span> Technology
-        </h3>
-        <h1>Let's Devolop a Great Product</h1>
-        <button>Let's Talk</button>
-      </div>
+        </motion.h3>
+        <motion.h1 variants={titleAnim}>
+          Let's Devolop a Great Product
+        </motion.h1>
+        <motion.button variants={buttonAnim}>Let's Talk</motion.button>
+      </motion.div>
       <div className="dev-imge">
-        <img src="/img/test.png" />
+        <motion.img variants={mainIcon} src="/img/test.png" />
       </div>
       <div className="svg">
         <img src="/img/wave.svg" alt="" />
@@ -97,9 +107,18 @@ const Box = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-
+    overflow: hidden;
     img {
       width: 82%;
+      animation: scale 3s linear alternate infinite 1.8s;
+    }
+  }
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.04);
     }
   }
   .svg {

@@ -1,26 +1,43 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { Link as Ln } from "react-scroll";
 import styled from "styled-components";
 import ContactSmallSection from "../../components/ContactSmallSection";
 import ServicesSection from "../../components/ServicesSection";
+import {
+  mainIcon,
+  pageAnimation,
+  paragraphAni,
+  stagger,
+  titleAnim,
+} from "../animation";
 
 export default function services() {
   return (
-    <div>
+    <motion.div
+      variants={pageAnimation}
+      exit="exit"
+      initial="hidden"
+      animate="show"
+    >
       <Mainherose>
         <div className="main">
-          <div className="column">
-            <h1>Our Services</h1>
-            <p>
+          <motion.div variants={stagger} className="column">
+            <motion.h1 variants={titleAnim}>Our Services</motion.h1>
+            <motion.p variants={paragraphAni}>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
               dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
               sanctus est Lorem ipsum d
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
           <div className="column">
-            <img src="/img/svg/services.svg" alt="" />
+            <motion.img
+              variants={mainIcon}
+              src="/img/svg/services.svg"
+              alt=""
+            />
           </div>
         </div>
         <div className="wave">
@@ -69,7 +86,7 @@ export default function services() {
       </Rowmid>
       <ServicesSection />
       <ContactSmallSection />
-    </div>
+    </motion.div>
   );
 }
 const Mainherose = styled.div`

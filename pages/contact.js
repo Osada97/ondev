@@ -1,10 +1,27 @@
+import { motion } from "framer-motion";
 import Head from "next/head";
 import React from "react";
 import styled from "styled-components";
+import {
+  buttonAnim1,
+  cardAnim,
+  formanimation,
+  mainIcon,
+  pageAnimation,
+  paragraphAni,
+  socialAnim,
+  stagger,
+  titleAnim,
+} from "./animation";
 
 function Contact() {
   return (
-    <div>
+    <motion.div
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <Head>
         <title>OnDev Home</title>
         <link rel="icon" href="/favicon.ico" />
@@ -14,73 +31,92 @@ function Contact() {
           <Row1>
             <div className="column">
               <div className="heimage">
-                <img src="/img/svg/Getting Coffee.svg" alt="" />
+                <motion.img
+                  variants={mainIcon}
+                  src="/img/svg/Getting Coffee.svg"
+                  alt=""
+                />
               </div>
             </div>
-            <div className="column">
-              <h1>What Can We Build For You?</h1>
-              <h2>Drop A Message</h2>
+            <motion.div variants={stagger} className="column">
+              <motion.h1 variants={titleAnim}>
+                What Can We Build For You?
+              </motion.h1>
+              <motion.h2 variants={titleAnim}>Drop A Message</motion.h2>
               <form>
-                <input type="text" name="username" placeholder="Username" />
-                <input type="text" name="Email" placeholder="Email" />
-                <textarea
+                <motion.input
+                  variants={formanimation}
+                  type="text"
+                  name="username"
+                  placeholder="Username"
+                />
+                <motion.input
+                  variants={formanimation}
+                  type="text"
+                  name="Email"
+                  placeholder="Email"
+                />
+                <motion.textarea
+                  variants={formanimation}
                   name="message"
                   id="msg"
                   placeholder="Message"
-                ></textarea>
+                ></motion.textarea>
 
-                <button>Send Message</button>
+                <motion.button variants={buttonAnim1}>
+                  Send Message
+                </motion.button>
               </form>
               <div className="fl_row">
-                <h3>Follow Us</h3>
+                <motion.h3 variants={paragraphAni}>Follow Us</motion.h3>
                 <div className="scl">
-                  <div className="col">
+                  <motion.div variants={paragraphAni} className="col">
                     <a href="#">
                       <img src="/img/svg/facebook-f-brands.svg" alt="" />
                     </a>
-                  </div>
-                  <div className="col">
+                  </motion.div>
+                  <motion.div variants={paragraphAni} className="col">
                     <a href="#">
                       <img src="/img/svg/twitter-brands.svg" alt="" />
                     </a>
-                  </div>
-                  <div className="col">
+                  </motion.div>
+                  <motion.div variants={paragraphAni} className="col">
                     <a href="#">
                       <img src="/img/svg/github-brands.svg" alt="" />
                     </a>
-                  </div>
-                  <div className="col">
+                  </motion.div>
+                  <motion.div variants={paragraphAni} className="col">
                     <a href="#">
                       <img src="/img/svg/whatsapp-brands.svg" alt="" />
                     </a>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </Row1>
         </Main>
       </Boxes>
       <Row2>
-        <div className="column">
+        <motion.div variants={paragraphAni} className="column">
           <div className="circl">
             <img src="/img/svg/at.svg" alt="" />
           </div>
           <h2>ondelanka@gmail.com</h2>
-        </div>
-        <div className="column">
+        </motion.div>
+        <motion.div variants={paragraphAni} className="column">
           <div className="circl">
             <img src="/img/svg/pin.svg" alt="" />
           </div>
           <h2>ondelanka@gmail.com</h2>
-        </div>
-        <div className="column">
+        </motion.div>
+        <motion.div variants={paragraphAni} className="column">
           <div className="circl">
             <img src="/img/svg/phone.svg" alt="" />
           </div>
           <h2>055-xxxxxxx</h2>
-        </div>
+        </motion.div>
       </Row2>
-    </div>
+    </motion.div>
   );
 }
 export default Contact;
