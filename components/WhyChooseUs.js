@@ -203,7 +203,9 @@ const Body = styled.div`
           &:nth-child(7) {
             grid-area: card7;
           }
-
+          &:hover {
+            box-shadow: 0px 0px 2px #313131, 0px 0px 13px #afafaf;
+          }
           &:hover .icon {
             box-shadow: 0px 0px 5px 3px #e6e6e69e;
           }
@@ -218,7 +220,6 @@ const Body = styled.div`
             justify-content: center;
             align-items: center;
             margin-bottom: 20px;
-
             img {
               width: 35px;
               height: 35px;

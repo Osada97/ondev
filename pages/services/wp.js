@@ -196,8 +196,12 @@ const Row2 = styled.div`
         align-items: center;
         transition: 0.8s ease;
 
-        &:hover {
-          transform: scaleX(-1);
+        .col {
+          transition: 0.8s ease;
+
+          &:hover {
+            transform: scaleX(-1);
+          }
         }
       }
     }

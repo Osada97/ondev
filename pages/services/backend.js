@@ -197,10 +197,13 @@ const Row2 = styled.div`
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        transition: 0.8s ease;
 
-        &:hover {
-          transform: scaleX(-1);
+        .col {
+          transition: 0.8s ease;
+
+          &:hover {
+            transform: scaleX(-1);
+          }
         }
       }
     }
