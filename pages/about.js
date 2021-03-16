@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import ContactSmallSection from "../components/ContactSmallSection";
+import Meta from "../components/meta";
 import {
   mainIcon,
   pageAnimation,
@@ -18,6 +19,9 @@ export default function about() {
       initial="hidden"
       animate="show"
     >
+      {/*meata */}
+      <Meta title="About" />
+
       <Mainhero>
         <div className="main">
           <motion.div variants={stagger} className="column">

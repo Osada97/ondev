@@ -3,6 +3,7 @@ import React from "react";
 import { Link as Ln } from "react-scroll";
 import styled from "styled-components";
 import ContactSmallSection from "../../components/ContactSmallSection";
+import Meta from "../../components/meta";
 import ServicesSection from "../../components/ServicesSection";
 import {
   mainIcon,
@@ -20,6 +21,9 @@ export default function services() {
       initial="hidden"
       animate="show"
     >
+      {/*meata */}
+      <Meta title="Services" />
+
       <Mainherose>
         <div className="main">
           <motion.div variants={stagger} className="column">

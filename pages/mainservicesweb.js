@@ -1,15 +1,21 @@
-import Head from "next/head";
+import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import ContactSmallSection from "../components/ContactSmallSection";
+import Meta from "../components/meta";
+import { pageAnimation } from "./animation";
 
 export default function mainservicesweb() {
   return (
-    <div>
-      <Head>
-        <title>OnDev Home</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <motion.div
+      variants={pageAnimation}
+      exit="exit"
+      initial="hidden"
+      animate="show"
+    >
+      {/*meata */}
+      <Meta title="Web" />
+
       <Boxes className="box">
         <Main>
           <Row1>
@@ -57,7 +63,7 @@ export default function mainservicesweb() {
         </div>
       </Row2>
       <ContactSmallSection />
-    </div>
+    </motion.div>
   );
 }
 

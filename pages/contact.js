@@ -2,14 +2,13 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import React from "react";
 import styled from "styled-components";
+import Meta from "../components/meta";
 import {
   buttonAnim1,
-  cardAnim,
   formanimation,
   mainIcon,
   pageAnimation,
   paragraphAni,
-  socialAnim,
   stagger,
   titleAnim,
 } from "./animation";
@@ -22,10 +21,9 @@ function Contact() {
       animate="show"
       exit="exit"
     >
-      <Head>
-        <title>OnDev Home</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      {/*meata */}
+      <Meta title="Contact" />
+
       <Boxes className="box">
         <Main>
           <Row1>

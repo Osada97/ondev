@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import ContactSmallSection from "../../components/ContactSmallSection";
+import Meta from "../../components/meta";
 import {
   mainIcon,
   pageAnimation,
@@ -18,6 +19,9 @@ export default function frontend() {
       initial="hidden"
       animate="show"
     >
+      {/*meata */}
+      <Meta title="Fontend Development" />
+
       <BoxesSer className="box">
         <Main>
           <Row1>

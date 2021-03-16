@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
@@ -8,7 +9,9 @@ export default function ContactSmallSection() {
         <div className="sma">
           <div className="dis">
             <h1>Have A Project In Mind?</h1>
-            <button>Gets Started</button>
+            <Link href="/contact">
+              <button>Gets Started</button>
+            </Link>
           </div>
           <div className="img-rc">
             <img src="/img/svg/rocket-phone.svg" alt="" />

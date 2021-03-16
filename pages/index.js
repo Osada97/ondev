@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Head from "next/head";
 import ContactSmallSection from "../components/ContactSmallSection";
 import Hero from "../components/Hero";
 import HowWeWork from "../components/HowWeWork";
@@ -16,10 +15,6 @@ export default function Home() {
       initial="hidden"
       animate="show"
     >
-      <Head>
-        <title>OnDev Home</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       {/* body */}
       <Hero />
       <WeBuild />
