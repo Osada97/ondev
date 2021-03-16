@@ -1,14 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { scrollScale } from "../pages/animation";
+import useScroll from "./useScroll";
 
 export default function WeBuild() {
+  const [element, controls] = useScroll();
+
   return (
-    <Build>
+    <Build ref={element} animate={controls} initial="hidden">
       <div className="top">
-        <h1>We Build</h1>
+        <motion.h1 variants={scrollScale}>We Build</motion.h1>
       </div>
-      <div className="body">
+      <motion.div variants={scrollScale} className="body">
         <div className="column">
           <img src="/img/svg/web.svg" alt="" />
           <div className="dl">
@@ -40,12 +45,12 @@ export default function WeBuild() {
             <button>Explore More</button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Build>
   );
 }
 
-const Build = styled.div`
+const Build = styled(motion.div)`
   padding: 45px;
   max-width: 1400px;
   margin: 0 auto;

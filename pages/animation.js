@@ -77,3 +77,72 @@ export const socialAnim = {
   },
   show: { opacity: 1, x: 0, transition: { duration: 1 } },
 };
+
+export const fade = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: { duration: 0.8, when: "beforeChildren" },
+  },
+};
+
+export const scrollScale = {
+  hidden: {
+    transform: "scale(1.02)",
+    opacity: 0,
+    transition: { duration: 0.8 },
+  },
+  show: {
+    transform: "scale(1)",
+    opacity: 1,
+    transition: { duration: 0.8, when: "beforeChildren" },
+  },
+};
+
+export const subTitleAnim = {
+  hidden: {
+    transform: "scale(1.08)",
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transform: "scale(1)",
+    transition: { duration: 0.5, when: "beforeChildren" },
+  },
+};
+
+export const cardFade = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8 },
+  },
+};
+
+export const smcardAnim = {
+  hidden: {
+    borderRadius: 20,
+  },
+  show: {
+    borderRadius: 50,
+    transition: { duration: 0.8 },
+  },
+};
+
+export const animateList = {
+  hidden: {
+    y: 20,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.8 },
+  },
+};

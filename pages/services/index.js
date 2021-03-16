@@ -5,7 +5,9 @@ import styled from "styled-components";
 import ContactSmallSection from "../../components/ContactSmallSection";
 import Meta from "../../components/meta";
 import ServicesSection from "../../components/ServicesSection";
+import useScroll from "../../components/useScroll";
 import {
+  cardFade,
   mainIcon,
   pageAnimation,
   paragraphAni,
@@ -14,6 +16,7 @@ import {
 } from "../animation";
 
 export default function services() {
+  const [element, controls] = useScroll();
   return (
     <motion.div
       variants={pageAnimation}
@@ -49,44 +52,49 @@ export default function services() {
         </div>
       </Mainherose>
       <Rowmid>
-        <div className="main">
+        <motion.div
+          ref={element}
+          animate={controls}
+          variants={stagger}
+          className="main"
+        >
           <Ln to="bd" smooth="true" duration={1500}>
-            <div className="col">
+            <motion.div variants={cardFade} className="col">
               <img src="/img/svg/database-solid.svg" alt="" />
               <h3>
                 <span>Backend</span> Web
               </h3>
               <p>Development</p>
-            </div>
+            </motion.div>
           </Ln>
           <Ln to="fd" smooth="true" duration={1500}>
-            <div className="col">
+            <motion.div variants={cardFade} className="col">
               <img src="/img/svg/website.svg" alt="" />
               <h3>
                 <span>Frontend</span> Web
               </h3>
               <p>Development</p>
-            </div>
+            </motion.div>
           </Ln>
           <Ln to="wp" smooth="true" duration={1500}>
-            <div className="col">
+            <motion.div variants={cardFade} className="col">
               <img src="/img/svg/wordpress-simple-brands.svg" alt="" />
               <h3>
                 <span>WordPress</span> Web
               </h3>
               <p>Development</p>
-            </div>
+            </motion.div>
           </Ln>
           <Ln to="dv" smooth="true" duration={1500}>
-            <div className="col">
+            <motion.div variants={cardFade} className="col">
               <img src="/img/svg/mobile-alt-solid.svg" alt="" />
               <h3>
                 <span>App</span> App
               </h3>
               <p>Development</p>
-            </div>
+            </motion.div>
           </Ln>
-        </div>
+        </motion.div>
       </Rowmid>
       <ServicesSection />
       <ContactSmallSection />

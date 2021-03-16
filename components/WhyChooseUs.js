@@ -1,11 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import Tilt from "react-tilt";
 import WhyChooseCard from "./WhyChooseCard";
+import useScroll from "./useScroll";
+import { motion } from "framer-motion";
+import { fade, mainIcon, stagger, titleAnim } from "../pages/animation";
 
 export default function WhyChooseUs() {
+  const [element, controls] = useScroll();
+
   return (
-    <WhyC>
+    <WhyC ref={element} animate={controls} variants={stagger}>
       <div className="wave">
         <img src="/img/s-wave-w-d.svg" alt="" />
       </div>
@@ -15,11 +19,11 @@ export default function WhyChooseUs() {
       <Main>
         <Body className="body">
           <div className="column">
-            <h1>Why Choose Us</h1>
-            <img src="/img/svg/why.svg" alt="" />
+            <motion.h1 variants={titleAnim}>Why Choose Us</motion.h1>
+            <motion.img variants={mainIcon} src="/img/svg/why.svg" alt="" />
           </div>
           <div className="column"></div>
-          <div className="column">
+          <motion.div className="column" variants={fade}>
             <div className="card-sec">
               <WhyChooseCard
                 imgname="vollet.svg"
@@ -47,14 +51,14 @@ export default function WhyChooseUs() {
                 content="Support And Maintenance"
               />
             </div>
-          </div>
+          </motion.div>
         </Body>
       </Main>
     </WhyC>
   );
 }
 
-const WhyC = styled.div`
+const WhyC = styled(motion.div)`
   background-color: #48484a;
   position: relative;
   margin-top: 55px;

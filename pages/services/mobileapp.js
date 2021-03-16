@@ -196,9 +196,10 @@ const Row2 = styled.div`
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        transition: 0.8s ease;
 
-        img {
-          width: 40px;
+        &:hover {
+          transform: scaleX(-1);
         }
       }
     }

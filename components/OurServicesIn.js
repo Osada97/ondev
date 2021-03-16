@@ -4,8 +4,13 @@ import ServiceCard from "./ServiceCard";
 import { useKeenSlider } from "keen-slider/react";
 import Link from "next/link";
 import "keen-slider/keen-slider.min.css";
+import useScroll from "./useScroll";
+import { motion } from "framer-motion";
+import { fade } from "../pages/animation";
 
 export default function OurServicesIn() {
+  const [element, controls] = useScroll();
+
   const [count, setcount] = useState(4);
 
   const [sliderRef] = useKeenSlider({
@@ -32,7 +37,7 @@ export default function OurServicesIn() {
 
   return (
     <Oservices>
-      <MainS>
+      <MainS ref={element} variants={fade} animate={controls} initial="hidden">
         <div className="top">
           <div className="column">
             <h1>Our Services</h1>
@@ -133,7 +138,7 @@ const Oservices = styled.div`
     padding: 80px 10px;
   }
 `;
-const MainS = styled.div`
+const MainS = styled(motion.div)`
   max-width: 1200px;
   margin: 0 auto;
   .top {

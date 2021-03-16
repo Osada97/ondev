@@ -203,6 +203,11 @@ const Row2 = styled.div`
 
         img {
           width: 40px;
+          transition: 0.8s ease;
+
+          &:hover {
+            transform: scaleX(-1);
+          }
         }
       }
     }

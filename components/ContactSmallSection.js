@@ -1,20 +1,29 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
+import { buttonAnim1, fade, stagger, titleAnim } from "../pages/animation";
+import useScroll from "./useScroll";
 
 export default function ContactSmallSection() {
+  const [element, controls] = useScroll();
+
   return (
-    <Wrapper>
+    <Wrapper ref={element} animate={controls} variants={stagger}>
       <Main>
         <div className="sma">
           <div className="dis">
-            <h1>Have A Project In Mind?</h1>
+            <motion.h1 variants={titleAnim}>Have A Project In Mind?</motion.h1>
             <Link href="/contact">
-              <button>Gets Started</button>
+              <motion.button variants={buttonAnim1}>Gets Started</motion.button>
             </Link>
           </div>
           <div className="img-rc">
-            <img src="/img/svg/rocket-phone.svg" alt="" />
+            <motion.img
+              variants={fade}
+              src="/img/svg/rocket-phone.svg"
+              alt=""
+            />
           </div>
         </div>
       </Main>
@@ -22,7 +31,7 @@ export default function ContactSmallSection() {
   );
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled(motion.div)`
   width: 100%;
   min-height: 80vh;
   display: flex;

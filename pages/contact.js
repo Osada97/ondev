@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Head from "next/head";
 import React from "react";
 import styled from "styled-components";
 import Meta from "../components/meta";
