@@ -41,7 +41,10 @@ export default function Nav({ navType }) {
     <NAV>
       <NavMain>
         <Log className="log">
-          <StyledImage src="/img/L2.svg" alt="logo" />
+          <StyledImage
+            src={navType ? "/img/L2.svg" : "/img/L1.png"}
+            alt="logo"
+          />
         </Log>
         <List className="list-col">
           <Ul>
