@@ -1,7 +1,8 @@
-import { motion } from "framer-motion";
-import React from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Meta from "../components/meta";
+import emailjs from "emailjs-com";
 import {
   buttonAnim1,
   formanimation,
@@ -11,8 +12,40 @@ import {
   stagger,
   titleAnim,
 } from "./animation";
+import Alert from "../components/Alert";
 
 function Contact() {
+  const [isEmail, setisEmail] = useState(false);
+  const [info, setinfo] = useState({ title: "", msg: "" });
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_wjqe98f",
+        "template_uy4ybdd",
+        e.target,
+        "user_zI16cRTRxHRYTsWz9OX5Z"
+      )
+      .then(
+        (result) => {
+          setisEmail(true);
+          setinfo({ title: "Thank You", msg: "Your Message Has Been Sent" });
+          console.log(result.text);
+        },
+        (error) => {
+          setisEmail(true);
+          setinfo({
+            title: "Can Not Send Email",
+            msg: "Please Try Again",
+          });
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
   return (
     <motion.div
       variants={pageAnimation}
@@ -22,6 +55,12 @@ function Contact() {
     >
       {/*meata */}
       <Meta title="Contact" />
+
+      {isEmail ? (
+        <Alert setisEmail={setisEmail} info={info} isEmail={isEmail} />
+      ) : (
+        ""
+      )}
 
       <Boxes className="box">
         <Main>
@@ -40,24 +79,27 @@ function Contact() {
                 What Can We Build For You?
               </motion.h1>
               <motion.h2 variants={titleAnim}>Drop A Message</motion.h2>
-              <form>
+              <form onSubmit={sendEmail}>
                 <motion.input
                   variants={formanimation}
                   type="text"
-                  name="username"
-                  placeholder="Username"
+                  name="name"
+                  placeholder="Name"
+                  required
                 />
                 <motion.input
                   variants={formanimation}
                   type="text"
-                  name="Email"
+                  name="email"
                   placeholder="Email"
+                  required
                 />
                 <motion.textarea
                   variants={formanimation}
                   name="message"
                   id="msg"
                   placeholder="Message"
+                  required
                 ></motion.textarea>
 
                 <motion.button variants={buttonAnim1}>

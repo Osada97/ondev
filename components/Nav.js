@@ -41,7 +41,7 @@ export default function Nav({ navType }) {
     <NAV>
       <NavMain>
         <Log className="log">
-          <StyledImage src="/img/L1.png" alt="logo" />
+          <StyledImage src="/img/L2.svg" alt="logo" />
         </Log>
         <List className="list-col">
           <Ul>
