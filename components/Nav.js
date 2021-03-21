@@ -42,7 +42,7 @@ export default function Nav({ navType }) {
       <NavMain>
         <Log className="log">
           <StyledImage
-            src={navType ? "/img/L2.svg" : "/img/L1.png"}
+            src={navType ? "/img/l2.png" : "/img/L1.png"}
             alt="logo"
           />
         </Log>
