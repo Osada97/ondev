@@ -17,10 +17,10 @@ export default function Hero() {
       </motion.div>
       <motion.div variants={stagger} className="text-section">
         <motion.h3 variants={titleAnim}>
-          Welcome To <span>OnDev</span> Technology
+          Welcome To <span>OnDev</span> Technologies
         </motion.h3>
         <motion.h1 variants={titleAnim}>
-          Let's Devolop a Great Product
+          Let's Develop a Great Product
         </motion.h1>
         <motion.button variants={buttonAnim}>Let's Talk</motion.button>
       </motion.div>
