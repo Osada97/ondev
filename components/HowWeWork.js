@@ -66,7 +66,7 @@ export default function HowWeWork() {
           </SimCard>
         </Bdy>
         <div className="bdy-sub">
-          <motion.img variants={fade} src="/img/svg/man-behind.svg" alt="" />
+          <motion.img variants={fade} src="/img/svg/Man-behind.svg" alt="" />
         </div>
       </Main>
     </HowWe>
