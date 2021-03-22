@@ -3,7 +3,7 @@ import React from "react";
 import { Link as Ln } from "react-scroll";
 import styled from "styled-components";
 import ContactSmallSection from "../../components/ContactSmallSection";
-import Meta from "../../components/meta";
+import Meta from "../../components/Meta";
 import ServicesSection from "../../components/ServicesSection";
 import useScroll from "../../components/useScroll";
 import {

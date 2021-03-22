@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import styled from "styled-components";
-import Meta from "../components/meta";
+import Meta from "../components/Meta";
 import emailjs from "emailjs-com";
 import {
   buttonAnim1,

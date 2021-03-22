@@ -5,7 +5,7 @@ import AboutSection from "../components/AboutSection";
 import AboutSection1 from "../components/AboutSection1";
 import AboutSectionTh from "../components/AboutSectionTh";
 import ContactSmallSection from "../components/ContactSmallSection";
-import Meta from "../components/meta";
+import Meta from "../components/Meta";
 
 import {
   mainIcon,

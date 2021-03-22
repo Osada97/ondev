@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Nav from "./Nav";
 import Footer from "./Footer";
-import Meta from "./meta";
+import Meta from "./Meta";
 
 export default function LayOut({ children }) {
   const [navType, setnavType] = useState(true);
