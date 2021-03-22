@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { scrollScale } from "../pages/animation";
+import { scrollScale } from "./animation";
 import useScroll from "./useScroll";
 
 export default function WeBuild() {

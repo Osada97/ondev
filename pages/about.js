@@ -6,14 +6,14 @@ import AboutSection1 from "../components/AboutSection1";
 import AboutSectionTh from "../components/AboutSectionTh";
 import ContactSmallSection from "../components/ContactSmallSection";
 import Meta from "../components/meta";
-import useScroll from "../components/useScroll";
+
 import {
   mainIcon,
   pageAnimation,
   paragraphAni,
   stagger,
   titleAnim,
-} from "./animation";
+} from "../components/animation";
 
 export default function about() {
   return (

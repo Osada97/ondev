@@ -9,7 +9,7 @@ import {
   paragraphAni,
   stagger,
   titleAnim,
-} from "../animation";
+} from "../../components/animation";
 
 export default function frontend() {
   return (

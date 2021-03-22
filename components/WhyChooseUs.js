@@ -3,7 +3,7 @@ import styled from "styled-components";
 import WhyChooseCard from "./WhyChooseCard";
 import useScroll from "./useScroll";
 import { motion } from "framer-motion";
-import { fade, mainIcon, stagger, titleAnim } from "../pages/animation";
+import { fade, mainIcon, stagger, titleAnim } from "./animation";
 
 export default function WhyChooseUs() {
   const [element, controls] = useScroll();

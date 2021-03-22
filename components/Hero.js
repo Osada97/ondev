@@ -7,7 +7,7 @@ import {
   shadowIcon,
   stagger,
   titleAnim,
-} from "../pages/animation";
+} from "./animation";
 
 export default function Hero() {
   return (

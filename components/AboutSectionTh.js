@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
-import { cardFade, fade, paragraphAni, stagger } from "../pages/animation";
+import { cardFade, fade, paragraphAni, stagger } from "./animation";
 import useScroll from "./useScroll";
 
 function AboutSectionTh() {

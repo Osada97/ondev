@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
-import { buttonAnim1, fade, stagger, titleAnim } from "../pages/animation";
+import { buttonAnim1, fade, stagger, titleAnim } from "./animation";
 import useScroll from "./useScroll";
 
 export default function ContactSmallSection() {

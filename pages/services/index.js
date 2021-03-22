@@ -13,7 +13,7 @@ import {
   paragraphAni,
   stagger,
   titleAnim,
-} from "../animation";
+} from "../../components/animation";
 
 export default function services() {
   const [element, controls] = useScroll();

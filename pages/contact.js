@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import styled from "styled-components";
 import Meta from "../components/meta";
@@ -11,7 +11,7 @@ import {
   paragraphAni,
   stagger,
   titleAnim,
-} from "./animation";
+} from "../components/animation";
 import Alert from "../components/Alert";
 
 function Contact() {

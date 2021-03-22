@@ -7,7 +7,7 @@ import {
   fade,
   paragraphAni,
   stagger,
-} from "../pages/animation";
+} from "./animation";
 import useScroll from "./useScroll";
 
 function AboutSection() {

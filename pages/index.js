@@ -5,7 +5,7 @@ import HowWeWork from "../components/HowWeWork";
 import OurServicesIn from "../components/OurServicesIn";
 import WeBuild from "../components/weBuild";
 import WhyChooseUs from "../components/WhyChooseUs";
-import { pageAnimation } from "./animation";
+import { pageAnimation } from "../components/animation";
 
 export default function Home() {
   return (

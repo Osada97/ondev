@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import ContactSmallSection from "../components/ContactSmallSection";
 import Meta from "../components/meta";
-import { pageAnimation } from "./animation";
+import { pageAnimation } from "../components/animation";
 
 export default function mainservicesweb() {
   return (

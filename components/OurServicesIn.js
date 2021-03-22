@@ -6,7 +6,7 @@ import Link from "next/link";
 import "keen-slider/keen-slider.min.css";
 import useScroll from "./useScroll";
 import { motion } from "framer-motion";
-import { fade } from "../pages/animation";
+import { fade } from "./animation";
 
 export default function OurServicesIn() {
   const [element, controls] = useScroll();
