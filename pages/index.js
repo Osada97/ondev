@@ -3,7 +3,7 @@ import ContactSmallSection from "../components/ContactSmallSection";
 import Hero from "../components/Hero";
 import HowWeWork from "../components/HowWeWork";
 import OurServicesIn from "../components/OurServicesIn";
-import WeBuild from "../components/weBuild";
+import WeBuild from "../components/WeBuild";
 import WhyChooseUs from "../components/WhyChooseUs";
 import { pageAnimation } from "../components/animation";
 
