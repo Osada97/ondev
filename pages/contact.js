@@ -140,13 +140,13 @@ function Contact() {
           <div className="circl">
             <img src="/img/svg/at.svg" alt="" />
           </div>
-          <h2>ondelanka@gmail.com</h2>
+          <h2>ondevlanka@gmail.com</h2>
         </motion.div>
         <motion.div variants={paragraphAni} className="column">
           <div className="circl">
             <img src="/img/svg/pin.svg" alt="" />
           </div>
-          <h2>ondelanka@gmail.com</h2>
+          <h2>ondevlanka@gmail.com</h2>
         </motion.div>
         <motion.div variants={paragraphAni} className="column">
           <div className="circl">
