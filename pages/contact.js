@@ -166,6 +166,7 @@ const Boxes = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 70px 0;
   @media (max-width: 857px) {
     padding: 150px 0 100px;
   }
