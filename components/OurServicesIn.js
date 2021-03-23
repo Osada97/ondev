@@ -101,7 +101,7 @@ export default function OurServicesIn() {
             num="5"
           />
           <ServiceCard
-            title="Linux Server Deployement"
+            title="Linux Server Development"
             msg="Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Numquam, similique? Beatae accusamus quo deserunt ipsum
                 excepturi, inventore expedita possimus? Mollitia quisquam illum
