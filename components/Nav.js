@@ -269,7 +269,7 @@ const Mobilenav = styled.div`
     .menubar1,
     .menubar2,
     .menubar3 {
-      background-color: #fff;
+      background-color: rgb(255, 255, 255);
       width: 100%;
       height: 2.5px;
     }
@@ -282,7 +282,7 @@ const Mobilenav = styled.div`
   .menu {
     position: absolute;
     display: block;
-    background-color: #fffffff2;
+    background-color: rgba(255, 255, 255, 95%);
     top: 180%;
     right: 0;
     width: 230px;
