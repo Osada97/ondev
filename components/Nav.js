@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
@@ -36,6 +36,21 @@ export default function Nav({ navType }) {
     },
   };
 
+  const menumob = useRef();
+
+  //when body click menu hidden
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.addEventListener("click", exitmobNav);
+  });
+
+  const exitmobNav = (e) => {
+    if (!menumob.current.contains(e.target)) {
+      setisMobNav(false);
+    }
+  };
+
   return (
     <NAV>
       <NavMain>
@@ -69,7 +84,7 @@ export default function Nav({ navType }) {
             <button className={!navType ? "myStyle" : ""}>LET'S TALK</button>
           </Link>
         </List>
-        <Mobilenav>
+        <Mobilenav className="mobmenu" ref={menumob}>
           <button onClick={() => setisMobNav(!isMobNav)}>
             <div className={!navType ? "myBar menubar1" : "menubar1"}></div>
             <div className={!navType ? "myBar menubar2" : "menubar2"}></div>
