@@ -33,7 +33,7 @@ export default function ContactSmallSection() {
 
 const Wrapper = styled(motion.div)`
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 `;

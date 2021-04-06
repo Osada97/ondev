@@ -140,6 +140,7 @@ const Oservices = styled.div`
 const MainS = styled(motion.div)`
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px 0;
   .top {
     width: 100%;
     display: flex;
