@@ -25,12 +25,11 @@ export default function OurServicesIn() {
   useEffect(() => {
     let innerWidth = window.innerWidth;
     console.log(innerWidth);
-    if (innerWidth < 560) {
+    if (innerWidth < 600) {
       setcount(1);
     } else if (innerWidth < 815) {
       setcount(2);
     } else if (innerWidth < 1111) {
-      console.log(3);
       setcount(3);
     }
   }, []);
