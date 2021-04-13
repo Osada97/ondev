@@ -104,10 +104,11 @@ export default function ServicesSection() {
           <div className="column">
             <h1>Deploy on cloud</h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
-              impedit sunt debitis officiis, quas voluptatum ducimus ab
-              perferendis asperiores eaque iusto necessitatibus fugit, dolores
-              recusandae alias tempora. Sed, quasi aliquid!
+              We are experienced in cloud platforms like AWS, DigitalOcean and
+              LINODE to do Cloud deployment which is the enablement of SaaS
+              (software as a service), PaaS (platform as a service) or IaaS
+              (infrastructure as a service) solutions that is accessed on demand
+              by end users or consumers.
             </p>
             <Link href="/services/wp">Read More &#8594;</Link>
           </div>

@@ -23,45 +23,50 @@ export default function HowWeWork() {
             <img src="/img/svg/howweworkin.svg" alt="" />
           </div>
           <SimCard variants={cardFade} style={{ top: "-3%", left: "34%" }}>
-            <h3>Requirements Gathering</h3>
+            <h3>Requirements gathering and planning</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor
+              Planning for the quality assurance requirements and identification
+              of the risks associated with the project is also done in the
+              planning stage
             </p>
           </SimCard>
           <SimCard variants={cardFade} style={{ top: "38%", left: "1%" }}>
             <h3>Designing</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor
+              Usually more than one design approach for the product architecture
+              is proposed and documented in a DDS - Design Document
+              Specification.
             </p>
           </SimCard>
           <SimCard variants={cardFade} style={{ top: "45%", left: "41%" }}>
             <h3>Implementations</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor
+              The programming code is generated as per DDS during this stage. If
+              the design is performed in a detailed and organized manner, code
+              generation can be accomplished without much hassle.
             </p>
           </SimCard>
-          <SimCard variants={cardFade} style={{ top: "1%", left: "72%" }}>
-            <h3>Implementations</h3>
+          <SimCard variants={cardFade} style={{ top: "-5%", left: "72%" }}>
+            <h3>Testing</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor
+              However, this stage refers to the testing only stage of the
+              product where product defects are reported, tracked, fixed and
+              retested, until the product reaches the quality standards defined
+              in the SRS
             </p>
           </SimCard>
           <SimCard variants={cardFade} style={{ bottom: "-13%", left: "62%" }}>
             <h3>Deployement</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor
+              Once the product is tested and ready to be deployed it is released
+              formally in the appropriate market
             </p>
           </SimCard>
           <SimCard variants={cardFade} style={{ bottom: "-21%", left: "3%" }}>
             <h3>Maintains</h3>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor
+              constant updating, modifying and re-assessing of software
+              applications to correct faults or improve performance
             </p>
           </SimCard>
         </Bdy>
@@ -98,11 +103,11 @@ const Main = styled(motion.div)`
     img {
       width: 160px;
     }
-    @media (max-width: 1000px) {
+    @media (max-width: 1100px) {
       display: none;
     }
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     max-width: 95%;
   }
 `;
@@ -116,7 +121,7 @@ const Bdy = styled(motion.div)`
       width: 80%;
     }
   }
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -141,7 +146,7 @@ const SimCard = styled(motion.div)`
     font-size: 15px;
     color: #48484a;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     position: relative;
     margin-bottom: 15px;
     top: 0 !important;
