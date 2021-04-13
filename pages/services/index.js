@@ -32,11 +32,9 @@ export default function services() {
           <motion.div variants={stagger} className="column">
             <motion.h1 variants={titleAnim}>Our Services</motion.h1>
             <motion.p variants={paragraphAni}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum d
+              As a skilled and creative outstanding team, ONdevers are 24*7
+              ready to generate durable , reliable and updated solutions to make
+              sure we do even more than you expected from u
             </motion.p>
           </motion.div>
           <div className="column">

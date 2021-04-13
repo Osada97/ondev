@@ -56,64 +56,43 @@ export default function OurServicesIn() {
         <div className="body keen-slider" ref={sliderRef}>
           <ServiceCard
             title="Frontend Web Development"
-            msg="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Numquam, similique? Beatae accusamus quo deserunt ipsum
-                excepturi, inventore expedita possimus? Mollitia quisquam illum
-                sed error maxime explicabo consequuntur ab, debitis eius."
+            msg="We do front-end development which is client-side development using vast varieties of technologies from HTML, CSS, and JavaScript to Next.js and React, for websites and web applications, in order to make users interact with them directly."
             imgUrl="lap.svg"
             num="1"
           />
           <ServiceCard
             title="Backend Web Development"
-            msg="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Numquam, similique? Beatae accusamus quo deserunt ipsum
-                excepturi, inventore expedita possimus? Mollitia quisquam illum
-                sed error maxime explicabo consequuntur ab, debitis eius."
+            msg="We do back-end development which also refers to server-side development using python, PHP and Node.js focusing on databases, scripting and website architecture much reliably so that the behind-the-scenes activities perform well."
             imgUrl="backend.svg"
             num="2"
           />
           <ServiceCard
             title="API Development"
-            msg="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Numquam, similique? Beatae accusamus quo deserunt ipsum
-                excepturi, inventore expedita possimus? Mollitia quisquam illum
-                sed error maxime explicabo consequuntur ab, debitis eius."
+            msg="We develop Application Programming Interfaces with the use of Django REST Framework and Nodejs that hide complexity from developers, extend systems to partners, organize code, and make components reusable"
             imgUrl="api.svg"
             num="3"
           />
           <ServiceCard
             title="React Development"
-            msg="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Numquam, similique? Beatae accusamus quo deserunt ipsum
-                excepturi, inventore expedita possimus? Mollitia quisquam illum
-                sed error maxime explicabo consequuntur ab, debitis eius."
+            msg="We produce services related to React which is an open-source front end JavaScript library to build user interfaces or UI components."
             imgUrl="react.svg"
             num="4"
           />
           <ServiceCard
             title="Django Development"
-            msg="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Numquam, similique? Beatae accusamus quo deserunt ipsum
-                excepturi, inventore expedita possimus? Mollitia quisquam illum
-                sed error maxime explicabo consequuntur ab, debitis eius."
+            msg="We use Django which is a Python-based, free and open-source web framework, which follows the model-template-views architectural pattern."
             imgUrl="dar.svg"
             num="5"
           />
           <ServiceCard
-            title="Linux Server Development"
-            msg="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Numquam, similique? Beatae accusamus quo deserunt ipsum
-                excepturi, inventore expedita possimus? Mollitia quisquam illum
-                sed error maxime explicabo consequuntur ab, debitis eius."
+            title="Deploy on cloud"
+            msg="We are experienced in cloud platforms like AWS, DigitalOcean and LINODE to do Cloud deployment which is the enablement of SaaS (software as a service), PaaS (platform as a service) or IaaS (infrastructure as a service) solutions that is accessed on demand by end users or consumers."
             imgUrl="database.svg"
             num="6"
           />
           <ServiceCard
             title="WordPress Development"
-            msg="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Numquam, similique? Beatae accusamus quo deserunt ipsum
-                excepturi, inventore expedita possimus? Mollitia quisquam illum
-                sed error maxime explicabo consequuntur ab, debitis eius."
+            msg="We do web development using WordPress which is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. "
             imgUrl="wp.svg"
             num="7"
           />

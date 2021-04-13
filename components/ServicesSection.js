@@ -13,11 +13,13 @@ export default function ServicesSection() {
           <div className="column" id="bd">
             <h1>Backend Development</h1>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum d
+              We do front-end development which is client-side development using
+              vast varieties of technologies from HTML, CSS, and JavaScript to
+              Next.js and React, for websites and web applications, in order to
+              make users interact with them directly. The purpose is to
+              communicate the database information to the browser. Anything and
+              everything that is unseen directly by the user such as databases
+              and servers is managed in the back-end by us.
             </p>
             <Link href="/services/backend">Read More &#8594;</Link>
 
@@ -35,11 +37,13 @@ export default function ServicesSection() {
           <div className="column">
             <h1>Frontend Development</h1>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum d
+              We do front-end development which is client-side development using
+              vast varieties of technologies from HTML, CSS, and JavaScript to
+              Next.js and React, for websites and web applications, in order to
+              make users interact with them directly.Engagement in analyzing
+              code, design, and debugging applications along with ensuring a
+              seamless user experience is done and. You manage what people first
+              see in their browser is managed by us
             </p>
             <Link href="/services/frontend">Read More &#8594;</Link>
             <div className="card-row">
@@ -59,11 +63,12 @@ export default function ServicesSection() {
           <div className="column">
             <h1>WordPress Development</h1>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum d
+              We do web development using WordPress which is a free and
+              open-source content management system written in PHP and paired
+              with a MySQL or MariaDB database. Wordpress provides a web-based
+              user interface for designing, publishing, and updating websites,
+              which is simpler and chooses among many different website
+              templates or themes according to any design you like.
             </p>
             <Link href="/services/wp">Read More &#8594;</Link>
           </div>
@@ -91,6 +96,23 @@ export default function ServicesSection() {
           </div>
         </div>
       </Sectionback>
+      <Sectionfon id="wp">
+        <div className="main">
+          <div className="column">
+            <img src="/img/svg/cloud.svg" alt="" />
+          </div>
+          <div className="column">
+            <h1>Deploy on cloud</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+              impedit sunt debitis officiis, quas voluptatum ducimus ab
+              perferendis asperiores eaque iusto necessitatibus fugit, dolores
+              recusandae alias tempora. Sed, quasi aliquid!
+            </p>
+            <Link href="/services/wp">Read More &#8594;</Link>
+          </div>
+        </div>
+      </Sectionfon>
     </div>
   );
 }

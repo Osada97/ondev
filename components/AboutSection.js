@@ -25,18 +25,12 @@ function AboutSection() {
           </div>
           <div className="column">
             <motion.h1 variants={fade}>
-              <span>OnDev</span> Vision
+              <span>ONdev</span> Vision
             </motion.h1>
             <motion.p variants={paragraphAni}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dLorem ipsum dolor sit amet, consetetur
-              sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-              accusam et justo duo dolores et ea rebum. Stet clita kasd
-              gubergren, no sea takimata sanctus est Lorem ipsum d
+              Prioritize sustainability in the fields of business, digital
+              marketing, ICT and technological solutions through the advancement
+              of virtual literacy and capabilities
             </motion.p>
             <motion.ul variants={stagger}>
               <motion.li variants={animateList}>

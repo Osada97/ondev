@@ -19,10 +19,12 @@ export default function WeBuild() {
           <div className="dl">
             <h2>Web</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
-              ipsum animi assumenda explicabo quasi ea nesciunt doloremque
-              dolore nulla dolorem. Veniam commodi a dolorum voluptas labore
-              corrupti tenetur iusto neque.
+              To manage and promote your business, having a website has become a
+              must in today’s world. So, our duty is to create, well equipped
+              single page static websites or complex web applications for you,
+              that can perform well on the internet or intranet. So, we design
+              and develop SEO friendly, flexible and user centric attractive
+              websites according to your requirements.
             </p>
             <Link href="/mainservicesweb">
               <button>Explore More</button>
@@ -37,10 +39,10 @@ export default function WeBuild() {
           <div className="dl">
             <h2>Mobile</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
-              ipsum animi assumenda explicabo quasi ea nesciunt doloremque
-              dolore nulla dolorem. Veniam commodi a dolorum voluptas labore
-              corrupti tenetur iusto neque.
+              In the 21st century, mobile devices lead the day today. So, we
+              make sure your business attracts customers through their mobile,
+              with our outstanding and reliable development, based on native and
+              hybrid mobile applications.
             </p>
             <button>Explore More</button>
           </div>

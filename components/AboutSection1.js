@@ -12,15 +12,12 @@ function AboutSection1() {
         <motion.div className="main" ref={element} animate={controls}>
           <motion.div className="column" variants={stagger}>
             <motion.h1 variants={fade}>
-              <span>OnDev</span> Mission
+              <span>ONdev</span> Mission
             </motion.h1>
             <motion.p variants={paragraphAni}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dLorem ipsum dolor sit amet, consetetur
-              sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+              To apply ICT to become a prior and globally recognized team which
+              creates sustainable solutions to fulfil the needs and desires of
+              the society.
             </motion.p>
             <div className="card-row">
               <motion.div variants={cardFade} className="card">

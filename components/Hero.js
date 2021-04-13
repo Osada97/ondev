@@ -20,7 +20,7 @@ export default function Hero() {
           Welcome To <span>OnDev</span> Technologies
         </motion.h3>
         <motion.h1 variants={titleAnim}>
-          Let's Develop a Great Product
+          Let’s create an outstanding product
         </motion.h1>
         <motion.button variants={buttonAnim}>Let's Talk</motion.button>
       </motion.div>

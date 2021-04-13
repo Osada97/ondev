@@ -15,15 +15,26 @@ function AboutSectionTh() {
           </div>
           <motion.div variants={stagger} className="column">
             <motion.h1 variants={fade}>
-              <span>OnDev</span> Values
+              <span>ONdev</span> Values
             </motion.h1>
             <motion.p variants={paragraphAni}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dLorem ipsum dolor sit amet, consetetur
-              sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+              Enjoy the journey - Our team always has been given the freedom and
+              they offer the friendship in every step of this journey, and
+              always value and enjoy the interactions with every party of this
+              climb
+            </motion.p>
+            <motion.p variants={paragraphAni}>
+              Get the job done - Our sole purpose is to get the job you bring to
+              us done, so that we can see you satisfied even more than you
+              expected. So, we are always equipped with knowledge, skills and
+              technology to bring your idea into reality.
+            </motion.p>
+            <motion.p variants={paragraphAni}>
+              Focuses on a sustained future- Our duty is to see what we produce
+              and create for you , is sustained in the future , and withstands ,
+              not just for today but for many times ahead. And we always work
+              hard to be fitted for sustainability which has become a globally
+              trendy topic.
             </motion.p>
             <div className="card-row">
               <motion.div variants={cardFade} className="card">

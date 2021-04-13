@@ -31,14 +31,14 @@ export default function about() {
           <motion.div variants={stagger} className="column">
             <motion.h1 variants={titleAnim}>About Us</motion.h1>
             <motion.h2 variants={titleAnim}>
-              <span>OnDev</span> We're Global Team
+              We, <span>ONdev</span>, are a global team
             </motion.h2>
             <motion.p variants={paragraphAni}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum d
+              We work as a team to transform your idea into a virtual reality
+              that makes your business a leading model on the internet. Further,
+              our goal is to offer sustainability through the solutions we
+              produce to fulfil any of the existing or future needs of our
+              customers.
             </motion.p>
           </motion.div>
           <div className="column">
