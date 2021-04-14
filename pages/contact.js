@@ -146,13 +146,14 @@ function Contact() {
           <div className="circl">
             <img src="/img/svg/pin.svg" alt="" />
           </div>
-          <h2>ondevlanka@gmail.com</h2>
+          <h2>|| Sri Lanka ||</h2>
         </motion.div>
         <motion.div variants={paragraphAni} className="column">
           <div className="circl">
             <img src="/img/svg/phone.svg" alt="" />
           </div>
-          <h2>055-xxxxxxx</h2>
+          <h2>071 010 1640</h2>
+          <h2>076 859 7090</h2>
         </motion.div>
       </Row2>
     </motion.div>
