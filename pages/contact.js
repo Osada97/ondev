@@ -152,8 +152,10 @@ function Contact() {
           <div className="circl">
             <img src="/img/svg/phone.svg" alt="" />
           </div>
-          <h2>071 010 1640</h2>
-          <h2>076 859 7090</h2>
+          <div className="cont">
+            <h2>071 010 1640</h2>
+            <h2>076 859 7090</h2>
+          </div>
         </motion.div>
       </Row2>
     </motion.div>
@@ -331,7 +333,6 @@ const Row2 = styled.div`
     }
 
     .circl {
-      flex: 0.2;
       width: 60px;
       height: 60px;
       background-color: #48484a;
