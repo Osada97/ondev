@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ondevlk.com/sitemap.xml
