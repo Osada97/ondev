@@ -1,5 +1,5 @@
 const generateSitemap = require("./scripts/generate-sitemap");
-const generateRSS = require("./scripts/generate-rss");
+//const generateRSS = require("./scripts/generate-rss");
 
 module.exports = {
   webpack: (config, { isServer }) => {

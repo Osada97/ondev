@@ -5,10 +5,10 @@ const generateSitemap = async () => {
   // Fetch all routes based on patterns
   // Your folder structure might be different so change bellow to match your needs
   const pages = await globby([
-    "pages/**/*.{ts,tsx,mdx}", // All routes inside /pages
+    "pages/**/*.{js,jsx,mdx}", // All routes inside /pages
     "_content/**/*.mdx", // All MDX files inside my /_content
-    "!pages/**/[*.{ts,tsx}", // Ignore my dynamic route index Example /pages/blog/[slug].tsx
-    "!pages/_*.{ts,tsx}", // Ignore next.js files
+    "!pages/**/[*.{js,jsx}", // Ignore my dynamic route index Example /pages/blog/[slug].tsx
+    "!pages/_*.{js,jsx}", // Ignore next.js files
     "!pages/api", // Ignore API routes
   ]);
 
@@ -23,7 +23,7 @@ const generateSitemap = async () => {
       // Remove the word index from route
       const route = path === "/index" ? "" : path;
       // Build url portion of sitemap.xml
-      return `<url><loc>https://codebycorey.com${route}</loc></url>`;
+      return `<url><loc>https://ondevlk.com${route}</loc></url>`;
     })
     .join("");
 
