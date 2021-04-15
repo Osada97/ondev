@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "npm run build && next export -o _static"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "emailjs-com": "^2.6.4",
