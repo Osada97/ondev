@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm install && next build",
+    "build": "next build",
     "start": "next start",
     "export": "npm run build && next export -o _static"
   },
   "dependencies": {
     "emailjs-com": "^2.6.4",
     "framer-motion": "^3.10.5",
+    "globby": "^11.0.3",
     "keen-slider": "^5.4.0",
     "next": "10.0.8",
     "react": "17.0.1",
