@@ -69,7 +69,7 @@ const Box = styled.div`
 
     h3 {
       color: #fff;
-      font-size: 31px;
+      font-size: 28px;
       font-weight: 400;
       margin-bottom: 10px;
       span {
@@ -79,7 +79,7 @@ const Box = styled.div`
 
     h1 {
       color: #fff;
-      font-size: 68px;
+      font-size: 50px;
       margin-bottom: 28px;
       letter-spacing: 1.3px;
     }
